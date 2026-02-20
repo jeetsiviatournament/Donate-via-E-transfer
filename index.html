@@ -6,23 +6,22 @@
   <title>Donate – The Jeet Sivia Memorial Golf Tournament</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <style>
-    .fixed-footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-top: 1px solid #ddd;
-      padding: 10px 0;
+    
+    /* Container for the bank logos */
+    .bank-row {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px; /* Space between the logos */
-      z-index: 1000;
+      flex-wrap: wrap;       /* Allows logos to wrap on small phone screens */
+      justify-content: center; /* Centers the logos horizontally */
+      align-items: center;     /* Aligns logos vertically */
+      gap: 15px;               /* Space between logos */
+      margin-top: 30px;        /* Space between the text and the logos */
+      padding-top: 20px;
+      border-top: 1px solid #eee; /* Light line to separate from text */
     }
     
+    /* Individual logo size */
     .footer-icon {
-      height: 60px; /* This is roughly 0.6 to 1 inch depending on screen */
+      height: 50px;            /* Roughly 0.5 to 0.75 inches */
       width: auto;
       transition: transform 0.2s;
     }
@@ -30,7 +29,7 @@
     .footer-icon:hover {
       transform: scale(1.1);
     }
-    
+
     body {
       font-family: Lato, sans-serif;
       padding: 0;  
@@ -86,23 +85,19 @@
     <p class="email">jeetsiviatournament@gmail.com</p>
     <p><small>Please include your name and email in the message. If required, please make password "Golf".</small></p>
     <p><em>Thank you for supporting our mission to impact cancer research and honour Jeet's legacy through golf!</em></p>
-    <div class="fixed-footer">
-      <a href="https://www.rbcroyalbank.com/personal.html" target="_blank">
+    <div class="bank-row">
+      <a href="https://www.rbcroyalbank.com" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnYZQANBWQdJQ9IWBEppHxJFAUpC1W00yyQ&s" alt="RBC" class="footer-icon">
       </a>
-      
-      <a href="https://www.td.com/ca/en/personal-banking" target="_blank">
+      <a href="https://www.td.com" target="_blank">
         <img src="https://cdn.freebiesupply.com/logos/large/2x/td-canada-trust-1-logo-svg-vector.svg" alt="TD" class="footer-icon">
       </a>
-  
-      <a href="https://www1.bmo.com/banking/digital/login" target="_blank">
+      <a href="https://www1.bmo.com" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzORj-pntKNyeDmHO2_fHysJz1lzwZOL2F4g&s" alt="BMO" class="footer-icon">
       </a>
-      
-      <a href="https://www.scotiabank.com/ca/en/personal.html" target="_blank">
+      <a href="https://www.scotiabank.com" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/7987275?s=280&v=4" alt="Scotiabank" class="footer-icon">
       </a>
-  
       <a href="https://login.vancity.com" target="_blank">
         <img src="https://ratemybank.ca/wp-content/uploads/2016/12/vancity.png" alt="Vancity" class="footer-icon">
       </a>
