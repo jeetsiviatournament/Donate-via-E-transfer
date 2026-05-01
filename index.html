@@ -8,7 +8,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
+    .presented-header {
+      display: flex !important;
+      flex-direction: row !important; /* Forces side-by-side */
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
 
+    .mini-logo {
+      height: 25px !important; /* Forces it to be tiny */
+      width: auto !important;   /* Keeps it from looking squished */
+      display: inline-block !important;
+    }
+    
     .header-image {
       display: block;      /* Removes extra space at the bottom of the image */
       margin: 0 auto;      /* Centers the image horizontally */
