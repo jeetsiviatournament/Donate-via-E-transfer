@@ -35,13 +35,16 @@
       color: #14490e;
     }
     
-    .presented-header {
-      display: flex !important;
-      flex-direction: row !important; /* Forces side-by-side */
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 10px;
-      margin-bottom: 10px;
+    .presented-header span {
+      colour: #666;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 15px; /* space before main logo */
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .mini-logo {
@@ -117,12 +120,12 @@
 <body>
   <div class="container">
     <div class="presented-header">
-      <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; text-transform: uppercase;">Presented by</span>
+      <span>Presented by</span>
       <img src="Foundation LOGO.png" class="mini-logo" alt="Foundation Logo">
-    <div>
+    </div>
     <div class="header-section">
       <img src="JST LOGO.png" alt="Jeet Sivia Memorial Golf Tournament" class="header-image">
-    <div>
+    </div>
     <p> Donate today via e-transfer to the email below. Big or small, your contribution is essential to achieving our goals!</p>
     <p class="email">jeetsiviatournament@gmail.com</p>
     <p><small>Please include your name and email in the message. Donation receipts available upon request. If required, please make password "GOLFING".</small></p>
