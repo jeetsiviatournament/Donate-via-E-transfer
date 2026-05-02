@@ -50,7 +50,7 @@
     }
 
     .mini-logo {
-      height: 80px !important; /* Forces it to be tiny */
+      height: 60px !important; /* Forces it to be tiny */
       width: auto !important;   /* Keeps it from looking squished */
       display: inline-block !important;
     }
@@ -66,20 +66,22 @@
     /* Container for the bank logos */
     .bank-row {
       display: flex;
-      flex-wrap: wrap;       /* Allows logos to wrap on small phone screens */
-      justify-content: center; /* Centers the logos horizontally */
-      align-items: center;     /* Aligns logos vertically */
-      gap: 15px;               /* Space between logos */
-      margin-top: 30px;        /* Space between the text and the logos */
+      flex-wrap: nowrap;       /* Forces them into one line */
+      justify-content: space-between; /* Spreads them evenly */
+      align-items: center;
+      gap: 10px;               /* Reduced gap for mobile */
+      margin-top: 30px;
       padding-top: 20px;
-      border-top: 1px solid #eee; /* Light line to separate from text */
+      border-top: 1px solid #eee;
     }
-    
-    /* Individual logo size */
+
+    /* Add a max-width to the icons so they shrink */
     .footer-icon {
-      height: 50px;            /* Roughly 0.5 to 0.75 inches */
-      width: auto;
-      transition: transform 0.2s;
+      height: auto;            /* Allow height to adjust */
+      max-height: 40px;        /* Cap the height */
+      width: 100%;             /* Let them fill the flex space */
+      max-width: 60px;         /* Prevents them from getting too big */
+      object-fit: contain;     /* Keeps logos from distorting */
     }
     
     .footer-icon:hover {
@@ -105,6 +107,21 @@
       .container {
         width: 92% !important;
         max-width: 95% !important;
+      ]
+
+      .email {
+        font-size: 4.8vw !important; /* Scalable font size based on screen width */
+        white-space: nowrap;         /* Prevents wrapping */
+        overflow: hidden;            /* Ensures no accidental scrollbars */
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      /* Shrink bank icons further for very small screens if needed */
+      .footer-icon {
+        max-height: 35px; 
+        gap: 5px;
+      }
     }
 
     h1 {
